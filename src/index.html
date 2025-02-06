@@ -21,6 +21,10 @@
       rel="stylesheet"
       href="https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-rounded/css/uicons-bold-rounded.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css"
+    />
 
     <title>Personal-website-Portfolio</title>
     <link rel="stylesheet" href="style.css" />
@@ -28,9 +32,10 @@
   <body>
     <!-- HEADER -->
     <header>
+      <!-- MENU MOBILE -->
       <i class="fi-br-menu-burger" onclick="showMenu()" id="list"></i>
-      <nav class="menu">
-        <ul id="nav" class="show">
+      <nav class="menu-mobile">
+        <ul id="nav" class="">
           <li><i class="fi-br-cross" onclick="hideMenu()" id="close"></i></li>
           <li><a href="#home" class="active">Home</a></li>
           <li><a href="#services">Services</a></li>
@@ -40,12 +45,150 @@
         </ul>
       </nav>
 
+      <!-- LOGO -->
       <div class="logo">
         <h1>Portfolio</h1>
       </div>
 
+      <!-- MENU PC -->
+      <nav class="menu-pc">
+        <ul id="nav" class="">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About me</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact me</a></li>
+        </ul>
+      </nav>
+
       <button class="hire-me">Hire me</button>
     </header>
+
+    <!-- CONTAINER -->
+    <div class="container">
+      <aside>
+        <div class="profile">
+          <div class="meet">
+            <p class="greetings">Hi I am</p>
+            <h1 class="name">Ryhan Nalbert</h1>
+          </div>
+
+          <h2 class="job">UI/UX Designer</h2>
+        </div>
+
+        <!-- SOCIAL -->
+        <div class="social">
+          <i class="fi-brands-instagram"></i>
+          <i class="fi-brands-linkedin"></i>
+          <i class="fi-brands-dribbble"></i>
+          <i class="fi-brands-behance"></i>
+        </div>
+
+        <!-- BUTTONS -->
+        <div class="buttons">
+          <button class="hire-me">Hire me</button>
+          <button class="cv">Download CV</button>
+        </div>
+
+        <!-- STATUS -->
+        <div class="status">
+          <div class="experiences">
+            <span>5+</span>
+            <p>Experiences</p>
+          </div>
+          <div class="projects">
+            <span>20+</span>
+            <p>Project done</p>
+          </div>
+          <div class="clients">
+            <span>80+</span>
+            <p>Satisfied clients</p>
+          </div>
+        </div>
+      </aside>
+      <div id="circle">
+        <img
+          src="/assets/Man in black suit looking confident.png"
+          id="man"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <!-- SERVICES -->
+    <div id="services">
+      <!-- DESCRIPTION -->
+      <div class="description">
+        <h2>Services</h2>
+        <p>Our services are always at your disposal</p>
+      </div>
+
+      <!-- CARDS -->
+      <div class="card">
+        <div>
+          <i class="fi fi-rr-users"></i>
+          <h2>App Design</h2>
+          <p>We are the best in app design</p>
+        </div>
+        <div>
+          <i class="fi fi-rr-users"></i>
+          <h2>App Design</h2>
+          <p>We are the best in app design</p>
+        </div>
+        <div>
+          <i class="fi fi-rr-users"></i>
+          <h2>App Design</h2>
+          <p>We are the best in app design</p>
+        </div>
+        <div>
+          <i class="fi fi-rr-users"></i>
+          <h2>App Design</h2>
+          <p>We are the best in app design</p>
+        </div>
+        <div>
+          <i class="fi fi-rr-users"></i>
+          <h2>App Design</h2>
+          <p>We are the best in app design</p>
+        </div>
+        <div>
+          <i class="fi fi-rr-users"></i>
+          <h2>App Design</h2>
+          <p>We are the best in app design</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ABOUT ME -->
+    <div id="about">
+      <!-- DESCRIPTION -->
+      <div class="description">
+        <h2>About me</h2>
+        <p>User interface and user experience and web design</p>
+      </div>
+
+      <!-- GRID -->
+      <div class="grid">
+        <!-- FRAME -->
+        <div class="frame">
+          <img src="/assets/man.png" alt="" />
+        </div>
+
+        <!-- TEXT -->
+        <div class="text">
+          <p>
+            A software engineer, the modern-day architect of digital realms,
+            navigates the ethereal landscapes of code, sculpting intangible
+            structures that shape our technological world. With fingers poised
+            over keyboards like virtuoso pianists, they compose symphonies of
+            logic, their minds a labyrinth of algorithms and solutions. Their
+            canvas is a screen, a vast expanse where lines of code dance in
+            intricate patterns, weaving the fabric of programs and applications.
+          </p>
+          <!-- DOWNLOAD BUTTON -->
+          <button><i class="fi fi-br-download"></i> <span>Download CV</span></button>
+        </div>
+      </div>
+    </div>
 
     <script src="script.js"></script>
   </body>
